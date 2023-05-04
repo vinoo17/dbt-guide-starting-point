@@ -1,0 +1,14 @@
+soccer_538:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: C:\dbt_Projects\dbt_demo\Repo\dbt-guide-starting-point\dbt-demos-385702-791d855a5068.json
+      project: dbt-demos-385702 # Replace this with your project id
+      dataset: soccer_538 # Replace this with dbt_your_name, e.g. dbt_bob
+      threads: 1
+      timeout_seconds: 300
+      location: US
+      priority: interactive
+      

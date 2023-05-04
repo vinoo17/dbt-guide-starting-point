@@ -1,0 +1,1406 @@
+[0m18:05:25.962311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A55C68A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A55F44950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A55993D10>]}
+
+
+============================== 18:05:25.971428 | 4df009c5-22fe-4f6c-bd18-315a69996f15 ==============================
+[0m18:05:25.971428 [info ] [MainThread]: Running with dbt=1.5.0
+[0m18:05:25.975443 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:05:25.981665 [info ] [MainThread]: Setting up your profile.
+[0m18:05:46.300500 [debug] [MainThread]: Command `dbt init` succeeded at 18:05:46.300500 after 20.44 seconds
+[0m18:05:46.307183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A563AFE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A55F44950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A4FB3F2D0>]}
+[0m18:05:46.307183 [debug] [MainThread]: Flushing usage events
+[0m18:22:17.271439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B42E97FE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B42E4C7210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B42E97FAD0>]}
+
+
+============================== 18:22:17.276659 | aea4d376-4c79-4a28-b125-76dceaa86c81 ==============================
+[0m18:22:17.276659 [info ] [MainThread]: Running with dbt=1.5.0
+[0m18:22:17.276659 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point\\logs', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:22:17.286902 [info ] [MainThread]: dbt version: 1.5.0
+[0m18:22:17.286902 [info ] [MainThread]: python version: 3.11.3
+[0m18:22:17.286902 [info ] [MainThread]: python path: C:\Users\Vin\AppData\Local\Programs\Python\Python311\python.exe
+[0m18:22:17.286902 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m18:22:17.286902 [info ] [MainThread]: Using profiles.yml file at C:\dbt_Projects\dbt_demo\repo\dbt-guide-starting-point\profiles.yml
+[0m18:22:17.297152 [info ] [MainThread]: Using dbt_project.yml file at C:\dbt_Projects\dbt_demo\repo\dbt-guide-starting-point\dbt_project.yml
+[0m18:22:17.297152 [info ] [MainThread]: Configuration:
+[0m18:22:18.227172 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:22:18.284187 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:22:18.286102 [info ] [MainThread]: Required dependencies:
+[0m18:22:18.286102 [debug] [MainThread]: Executing "git --help"
+[0m18:22:18.404664 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:22:18.404664 [debug] [MainThread]: STDERR: "b''"
+[0m18:22:18.404664 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:22:18.409684 [info ] [MainThread]: Connection:
+[0m18:22:18.409684 [info ] [MainThread]:   method: service-account
+[0m18:22:18.409684 [info ] [MainThread]:   database: dbt-demos
+[0m18:22:18.414753 [info ] [MainThread]:   schema: soccer_538
+[0m18:22:18.414753 [info ] [MainThread]:   location: US
+[0m18:22:18.414753 [info ] [MainThread]:   priority: interactive
+[0m18:22:18.414753 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:22:18.414753 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:22:18.414753 [info ] [MainThread]:   execution_project: dbt-demos
+[0m18:22:18.414753 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:22:18.424767 [info ] [MainThread]:   job_retries: 1
+[0m18:22:18.427339 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:22:18.427339 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:22:18.427339 [info ] [MainThread]:   gcs_bucket: None
+[0m18:22:18.427339 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:22:18.427339 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:22:18.434888 [debug] [MainThread]: On debug: select 1 as id
+[0m18:22:19.534331 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos&j=bq:US:57854274-b4ae-4beb-b92c-9c6d55eab79c&page=queryresults
+[0m18:22:19.534331 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:22:19.534331 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:22:19.544536 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project dbt-demos: User does not have bigquery.jobs.create permission in project dbt-demos.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:22:19.544536 [debug] [MainThread]: Command `dbt debug` failed at 18:22:19.544536 after 2.36 seconds
+[0m18:22:19.544536 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:22:19.551481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B42E250890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B42E95F990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B42E2164D0>]}
+[0m18:22:19.551481 [debug] [MainThread]: Flushing usage events
+[0m18:37:21.308047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289394A9850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002893976A810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289394A8C10>]}
+
+
+============================== 18:37:21.320500 | 3a1fcb00-91f8-4ed6-8a06-63ca6e1b9e89 ==============================
+[0m18:37:21.320500 [info ] [MainThread]: Running with dbt=1.5.0
+[0m18:37:21.325604 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:37:21.328729 [info ] [MainThread]: dbt version: 1.5.0
+[0m18:37:21.328729 [info ] [MainThread]: python version: 3.11.3
+[0m18:37:21.331942 [info ] [MainThread]: python path: C:\Users\Vin\AppData\Local\Programs\Python\Python311\python.exe
+[0m18:37:21.333962 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m18:37:21.333962 [info ] [MainThread]: Using profiles.yml file at C:\dbt_Projects\dbt_demo\repo\dbt-guide-starting-point\profiles.yml
+[0m18:37:21.333962 [info ] [MainThread]: Using dbt_project.yml file at C:\dbt_Projects\dbt_demo\repo\dbt-guide-starting-point\dbt_project.yml
+[0m18:37:21.339168 [info ] [MainThread]: Configuration:
+[0m18:37:22.354133 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:37:22.403053 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:37:22.405731 [info ] [MainThread]: Required dependencies:
+[0m18:37:22.405731 [debug] [MainThread]: Executing "git --help"
+[0m18:37:22.519957 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:37:22.519957 [debug] [MainThread]: STDERR: "b''"
+[0m18:37:22.527059 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:37:22.527059 [info ] [MainThread]: Connection:
+[0m18:37:22.530267 [info ] [MainThread]:   method: service-account
+[0m18:37:22.531963 [info ] [MainThread]:   database: dbt-demos
+[0m18:37:22.531963 [info ] [MainThread]:   schema: soccer_538
+[0m18:37:22.531963 [info ] [MainThread]:   location: US
+[0m18:37:22.537710 [info ] [MainThread]:   priority: interactive
+[0m18:37:22.540227 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:37:22.540227 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:37:22.540227 [info ] [MainThread]:   execution_project: dbt-demos
+[0m18:37:22.540227 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:37:22.545360 [info ] [MainThread]:   job_retries: 1
+[0m18:37:22.549377 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:37:22.550477 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:37:22.553489 [info ] [MainThread]:   gcs_bucket: None
+[0m18:37:22.555788 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:37:22.555788 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:37:22.560895 [debug] [MainThread]: On debug: select 1 as id
+[0m18:37:23.725804 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos&j=bq:US:6551dc4d-b054-4802-9c70-b85979c0ea2b&page=queryresults
+[0m18:37:23.730817 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:37:23.730817 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:37:23.736131 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project dbt-demos: User does not have bigquery.jobs.create permission in project dbt-demos.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:37:23.739150 [debug] [MainThread]: Command `dbt debug` failed at 18:37:23.739150 after 2.50 seconds
+[0m18:37:23.739150 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:37:23.739150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002893952B750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028939B94950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028939BE31D0>]}
+[0m18:37:23.746320 [debug] [MainThread]: Flushing usage events
+[0m18:39:57.869518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A7BAE190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170AA4E1550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170AA285910>]}
+
+
+============================== 18:39:57.879890 | dbe68ced-72c8-4648-b9ae-af0b020ecbb2 ==============================
+[0m18:39:57.879890 [info ] [MainThread]: Running with dbt=1.5.0
+[0m18:39:57.884499 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:39:57.884499 [info ] [MainThread]: Setting up your profile.
+[0m18:40:06.149212 [debug] [MainThread]: Command `dbt init` succeeded at 18:40:06.149212 after 8.36 seconds
+[0m18:40:06.149212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170AA912D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170AA571E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A43A9210>]}
+[0m18:40:06.153318 [debug] [MainThread]: Flushing usage events
+[0m18:40:22.639443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196CC681D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196CC181E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196C9807E10>]}
+
+
+============================== 18:40:22.648669 | fc63dbb8-328b-4716-b711-810ffe3b83ff ==============================
+[0m18:40:22.648669 [info ] [MainThread]: Running with dbt=1.5.0
+[0m18:40:22.651295 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:40:22.651295 [info ] [MainThread]: dbt version: 1.5.0
+[0m18:40:22.655847 [info ] [MainThread]: python version: 3.11.3
+[0m18:40:22.655847 [info ] [MainThread]: python path: C:\Users\Vin\AppData\Local\Programs\Python\Python311\python.exe
+[0m18:40:22.659053 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m18:40:22.661127 [info ] [MainThread]: Using profiles.yml file at C:\dbt_Projects\dbt_demo\repo\dbt-guide-starting-point\profiles.yml
+[0m18:40:22.662782 [info ] [MainThread]: Using dbt_project.yml file at C:\dbt_Projects\dbt_demo\repo\dbt-guide-starting-point\dbt_project.yml
+[0m18:40:22.664297 [info ] [MainThread]: Configuration:
+[0m18:40:23.642108 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:40:23.700573 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:40:23.710597 [info ] [MainThread]: Required dependencies:
+[0m18:40:23.710706 [debug] [MainThread]: Executing "git --help"
+[0m18:40:23.838090 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:40:23.838090 [debug] [MainThread]: STDERR: "b''"
+[0m18:40:23.838090 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:40:23.838090 [info ] [MainThread]: Connection:
+[0m18:40:23.838090 [info ] [MainThread]:   method: service-account
+[0m18:40:23.846110 [info ] [MainThread]:   database: dbt-demos
+[0m18:40:23.846110 [info ] [MainThread]:   schema: soccer_538
+[0m18:40:23.846110 [info ] [MainThread]:   location: US
+[0m18:40:23.852278 [info ] [MainThread]:   priority: interactive
+[0m18:40:23.856735 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:40:23.856735 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:40:23.861268 [info ] [MainThread]:   execution_project: dbt-demos
+[0m18:40:23.861268 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:40:23.861268 [info ] [MainThread]:   job_retries: 1
+[0m18:40:23.866878 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:40:23.868406 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:40:23.872308 [info ] [MainThread]:   gcs_bucket: None
+[0m18:40:23.877476 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:40:23.877476 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:40:23.877476 [debug] [MainThread]: On debug: select 1 as id
+[0m18:40:24.968093 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos&j=bq:US:d7005e6a-bef4-458b-a560-6a39909e2bec&page=queryresults
+[0m18:40:24.978219 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:40:24.978219 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:40:24.982240 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project dbt-demos: User does not have bigquery.jobs.create permission in project dbt-demos.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:40:24.983855 [debug] [MainThread]: Command `dbt debug` failed at 18:40:24.983855 after 2.43 seconds
+[0m18:40:24.983855 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:40:24.988433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196CC377C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196CCB04750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000196CC3B61D0>]}
+[0m18:40:24.989353 [debug] [MainThread]: Flushing usage events
+[0m18:47:31.600588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EA4288590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EA1BDDED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EA4288ED0>]}
+
+
+============================== 18:47:31.616017 | 1fc939d3-bf7e-4645-9abb-e67105f27ab8 ==============================
+[0m18:47:31.616017 [info ] [MainThread]: Running with dbt=1.5.0
+[0m18:47:31.616175 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:47:31.616175 [info ] [MainThread]: dbt version: 1.5.0
+[0m18:47:31.621289 [info ] [MainThread]: python version: 3.11.3
+[0m18:47:31.624053 [info ] [MainThread]: python path: C:\Users\Vin\AppData\Local\Programs\Python\Python311\python.exe
+[0m18:47:31.624053 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m18:47:31.626642 [info ] [MainThread]: Using profiles.yml file at C:\dbt_Projects\dbt_demo\repo\dbt-guide-starting-point\profiles.yml
+[0m18:47:31.626642 [info ] [MainThread]: Using dbt_project.yml file at C:\dbt_Projects\dbt_demo\repo\dbt-guide-starting-point\dbt_project.yml
+[0m18:47:31.626642 [info ] [MainThread]: Configuration:
+[0m18:47:32.520036 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:47:32.561198 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m18:47:32.561198 [info ] [MainThread]: Required dependencies:
+[0m18:47:32.561198 [debug] [MainThread]: Executing "git --help"
+[0m18:47:32.680127 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:47:32.680127 [debug] [MainThread]: STDERR: "b''"
+[0m18:47:32.680127 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:47:32.685241 [info ] [MainThread]: Connection:
+[0m18:47:32.685241 [info ] [MainThread]:   method: service-account
+[0m18:47:32.685241 [info ] [MainThread]:   database: dbt-demos
+[0m18:47:32.685241 [info ] [MainThread]:   schema: soccer_538
+[0m18:47:32.685241 [info ] [MainThread]:   location: US
+[0m18:47:32.685241 [info ] [MainThread]:   priority: interactive
+[0m18:47:32.695498 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:47:32.696195 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:47:32.696195 [info ] [MainThread]:   execution_project: dbt-demos
+[0m18:47:32.696195 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:47:32.703724 [info ] [MainThread]:   job_retries: 1
+[0m18:47:32.705940 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:47:32.705940 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:47:32.705940 [info ] [MainThread]:   gcs_bucket: None
+[0m18:47:32.712208 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:47:32.712208 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:47:32.712208 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: 'dbt-demos-385702-0891bdb1c0fd''
+[0m18:47:32.712208 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:47:32.716543 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:47:32.720570 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  at path ['name']: 'dbt-demos' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in C:\dbt_Projects\dbt_demo\repo\dbt-guide-starting-point\dbt_project.yml
+
+
+[0m18:47:32.720570 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  [Errno 2] No such file or directory: 'dbt-demos-385702-0891bdb1c0fd'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:47:32.720570 [debug] [MainThread]: Command `dbt debug` failed at 18:47:32.720570 after 1.19 seconds
+[0m18:47:32.726780 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:47:32.726780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EA49CB350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EA49A1ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019EA42E6910>]}
+[0m18:47:32.728879 [debug] [MainThread]: Flushing usage events
+[0m18:48:19.454059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C302B87D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C30675ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C30591450>]}
+
+
+============================== 18:48:19.464421 | 168daa61-9c9c-4f04-ad80-8443094b2b75 ==============================
+[0m18:48:19.464421 [info ] [MainThread]: Running with dbt=1.5.0
+[0m18:48:19.464421 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\repo\\dbt-guide-starting-point\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:48:19.464421 [info ] [MainThread]: dbt version: 1.5.0
+[0m18:48:19.464421 [info ] [MainThread]: python version: 3.11.3
+[0m18:48:19.464421 [info ] [MainThread]: python path: C:\Users\Vin\AppData\Local\Programs\Python\Python311\python.exe
+[0m18:48:19.464421 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m18:48:19.474808 [info ] [MainThread]: Using profiles.yml file at C:\dbt_Projects\dbt_demo\repo\dbt-guide-starting-point\profiles.yml
+[0m18:48:19.474808 [info ] [MainThread]: Using dbt_project.yml file at C:\dbt_Projects\dbt_demo\repo\dbt-guide-starting-point\dbt_project.yml
+[0m18:48:19.484823 [info ] [MainThread]: Configuration:
+[0m18:48:20.356058 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:48:20.413325 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:48:20.413325 [info ] [MainThread]: Required dependencies:
+[0m18:48:20.417991 [debug] [MainThread]: Executing "git --help"
+[0m18:48:20.535112 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:48:20.542900 [debug] [MainThread]: STDERR: "b''"
+[0m18:48:20.542900 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:48:20.542900 [info ] [MainThread]: Connection:
+[0m18:48:20.542900 [info ] [MainThread]:   method: service-account
+[0m18:48:20.542900 [info ] [MainThread]:   database: dbt-demos
+[0m18:48:20.542900 [info ] [MainThread]:   schema: soccer_538
+[0m18:48:20.550744 [info ] [MainThread]:   location: US
+[0m18:48:20.553602 [info ] [MainThread]:   priority: interactive
+[0m18:48:20.553602 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:48:20.553602 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:48:20.559306 [info ] [MainThread]:   execution_project: dbt-demos
+[0m18:48:20.559306 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:48:20.563661 [info ] [MainThread]:   job_retries: 1
+[0m18:48:20.563661 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:48:20.563661 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:48:20.563661 [info ] [MainThread]:   gcs_bucket: None
+[0m18:48:20.563661 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:48:20.563661 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:48:20.573744 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: 'dbt-demos-385702-0891bdb1c0fd''
+[0m18:48:20.575578 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:48:20.575578 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:48:20.575578 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  [Errno 2] No such file or directory: 'dbt-demos-385702-0891bdb1c0fd'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:48:20.575578 [debug] [MainThread]: Command `dbt debug` failed at 18:48:20.575578 after 1.20 seconds
+[0m18:48:20.575578 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:48:20.584109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C309E44D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C309D5050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C30899710>]}
+[0m18:48:20.584109 [debug] [MainThread]: Flushing usage events
+[0m18:49:49.056958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFAB58550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFAB59D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFB28E8D0>]}
+
+
+============================== 18:49:49.071817 | f5e47152-4948-4b6e-8718-6ab2bf467e43 ==============================
+[0m18:49:49.071817 [info ] [MainThread]: Running with dbt=1.5.0
+[0m18:49:49.071817 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:49:49.071817 [info ] [MainThread]: dbt version: 1.5.0
+[0m18:49:49.077454 [info ] [MainThread]: python version: 3.11.3
+[0m18:49:49.077454 [info ] [MainThread]: python path: C:\Users\Vin\AppData\Local\Programs\Python\Python311\python.exe
+[0m18:49:49.077454 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m18:49:49.077454 [info ] [MainThread]: Using profiles.yml file at C:\dbt_Projects\dbt_demo\Repo\dbt-guide-starting-point\profiles.yml
+[0m18:49:49.077454 [info ] [MainThread]: Using dbt_project.yml file at C:\dbt_Projects\dbt_demo\Repo\dbt-guide-starting-point\dbt_project.yml
+[0m18:49:49.077454 [info ] [MainThread]: Configuration:
+[0m18:49:49.965157 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:49:50.016609 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:49:50.016609 [info ] [MainThread]: Required dependencies:
+[0m18:49:50.016609 [debug] [MainThread]: Executing "git --help"
+[0m18:49:50.134409 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:49:50.134409 [debug] [MainThread]: STDERR: "b''"
+[0m18:49:50.134409 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:49:50.134409 [info ] [MainThread]: Connection:
+[0m18:49:50.141503 [info ] [MainThread]:   method: service-account
+[0m18:49:50.141503 [info ] [MainThread]:   database: dbt-demos
+[0m18:49:50.141503 [info ] [MainThread]:   schema: soccer_538
+[0m18:49:50.146578 [info ] [MainThread]:   location: US
+[0m18:49:50.146578 [info ] [MainThread]:   priority: interactive
+[0m18:49:50.146578 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:49:50.146578 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:49:50.151698 [info ] [MainThread]:   execution_project: dbt-demos
+[0m18:49:50.151698 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:49:50.151698 [info ] [MainThread]:   job_retries: 1
+[0m18:49:50.151698 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:49:50.151698 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:49:50.151698 [info ] [MainThread]:   gcs_bucket: None
+[0m18:49:50.161925 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:49:50.161925 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:49:50.161925 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: 'dbt-demos-385702-0891bdb1c0fd''
+[0m18:49:50.161925 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:49:50.161925 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:49:50.161925 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  [Errno 2] No such file or directory: 'dbt-demos-385702-0891bdb1c0fd'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:49:50.172124 [debug] [MainThread]: Command `dbt debug` failed at 18:49:50.172124 after 1.18 seconds
+[0m18:49:50.172124 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:49:50.172124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFABEFC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFB271FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFAE1E1D0>]}
+[0m18:49:50.172124 [debug] [MainThread]: Flushing usage events
+[0m18:50:34.734923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C2FF15FE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C2FE9E8F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C2FEA06F90>]}
+
+
+============================== 18:50:34.743305 | 2ef44c7d-e17c-4771-a7bb-c8c903468c77 ==============================
+[0m18:50:34.743305 [info ] [MainThread]: Running with dbt=1.5.0
+[0m18:50:34.743305 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:50:34.748828 [info ] [MainThread]: dbt version: 1.5.0
+[0m18:50:34.748828 [info ] [MainThread]: python version: 3.11.3
+[0m18:50:34.753383 [info ] [MainThread]: python path: C:\Users\Vin\AppData\Local\Programs\Python\Python311\python.exe
+[0m18:50:34.753501 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m18:50:34.753501 [info ] [MainThread]: Using profiles.yml file at C:\dbt_Projects\dbt_demo\Repo\dbt-guide-starting-point\profiles.yml
+[0m18:50:34.753501 [info ] [MainThread]: Using dbt_project.yml file at C:\dbt_Projects\dbt_demo\Repo\dbt-guide-starting-point\dbt_project.yml
+[0m18:50:34.753501 [info ] [MainThread]: Configuration:
+[0m18:50:35.632875 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:50:35.684435 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:50:35.686604 [info ] [MainThread]: Required dependencies:
+[0m18:50:35.686604 [debug] [MainThread]: Executing "git --help"
+[0m18:50:35.797992 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:50:35.798570 [debug] [MainThread]: STDERR: "b''"
+[0m18:50:35.798570 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:50:35.798570 [info ] [MainThread]: Connection:
+[0m18:50:35.798570 [info ] [MainThread]:   method: service-account
+[0m18:50:35.798570 [info ] [MainThread]:   database: dbt-demos
+[0m18:50:35.798570 [info ] [MainThread]:   schema: soccer_538
+[0m18:50:35.808708 [info ] [MainThread]:   location: US
+[0m18:50:35.808708 [info ] [MainThread]:   priority: interactive
+[0m18:50:35.808708 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:50:35.813744 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:50:35.816114 [info ] [MainThread]:   execution_project: dbt-demos
+[0m18:50:35.819147 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:50:35.819147 [info ] [MainThread]:   job_retries: 1
+[0m18:50:35.819147 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:50:35.819147 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:50:35.825742 [info ] [MainThread]:   gcs_bucket: None
+[0m18:50:35.825742 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:50:35.829570 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:50:35.829570 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery client: '[Errno 2] No such file or directory: 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\dbt-demos-385702-0891bdb1c0fd''
+[0m18:50:35.829570 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:50:35.829570 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:50:35.829570 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  [Errno 2] No such file or directory: 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\dbt-demos-385702-0891bdb1c0fd'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:50:35.839752 [debug] [MainThread]: Command `dbt debug` failed at 18:50:35.839752 after 1.18 seconds
+[0m18:50:35.839752 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:50:35.839752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C2FEC2DA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C2FECEE790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C2FECEFA10>]}
+[0m18:50:35.839752 [debug] [MainThread]: Flushing usage events
+[0m18:50:49.922837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017486B71E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017486E47210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001748722FAD0>]}
+
+
+============================== 18:50:49.928108 | adad3d04-875c-4469-9e47-0bb526a26f60 ==============================
+[0m18:50:49.928108 [info ] [MainThread]: Running with dbt=1.5.0
+[0m18:50:49.938294 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:50:49.938294 [info ] [MainThread]: Setting up your profile.
+[0m18:51:35.564666 [error] [MainThread]: Encountered an error:
+
+[0m18:51:35.585256 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Vin\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vin\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vin\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 459, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\Vin\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 277, in run
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\Vin\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\Vin\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vin\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 117, in generate_target_from_input
+    target = self.generate_target_from_input(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vin\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\Vin\AppData\Local\Programs\Python\Python311\Lib\site-packages\click\termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vin\AppData\Local\Programs\Python\Python311\Lib\site-packages\click\termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m18:51:35.585256 [debug] [MainThread]: Command `dbt init` failed at 18:51:35.585256 after 45.74 seconds
+[0m18:51:35.585256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017486DC1C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017486C5F6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017486AC9050>]}
+[0m18:51:35.585256 [debug] [MainThread]: Flushing usage events
+[0m18:51:59.426575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002699FFEF050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269A28B7210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269A29E2E50>]}
+
+
+============================== 18:51:59.431967 | d7433b26-c26d-4139-aac7-563560cb0078 ==============================
+[0m18:51:59.431967 [info ] [MainThread]: Running with dbt=1.5.0
+[0m18:51:59.431967 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:51:59.431967 [info ] [MainThread]: dbt version: 1.5.0
+[0m18:51:59.431967 [info ] [MainThread]: python version: 3.11.3
+[0m18:51:59.442872 [info ] [MainThread]: python path: C:\Users\Vin\AppData\Local\Programs\Python\Python311\python.exe
+[0m18:51:59.444801 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m18:51:59.444801 [info ] [MainThread]: Using profiles.yml file at C:\dbt_Projects\dbt_demo\Repo\dbt-guide-starting-point\profiles.yml
+[0m18:51:59.444801 [info ] [MainThread]: Using dbt_project.yml file at C:\dbt_Projects\dbt_demo\Repo\dbt-guide-starting-point\dbt_project.yml
+[0m18:51:59.450315 [info ] [MainThread]: Configuration:
+[0m18:52:00.344660 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:52:00.396326 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:52:00.396326 [info ] [MainThread]: Required dependencies:
+[0m18:52:00.396326 [debug] [MainThread]: Executing "git --help"
+[0m18:52:00.522562 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:52:00.522562 [debug] [MainThread]: STDERR: "b''"
+[0m18:52:00.530194 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:52:00.530194 [info ] [MainThread]: Connection:
+[0m18:52:00.532908 [info ] [MainThread]:   method: service-account
+[0m18:52:00.532908 [info ] [MainThread]:   database: dbt-demos
+[0m18:52:00.532908 [info ] [MainThread]:   schema: soccer_538
+[0m18:52:00.537422 [info ] [MainThread]:   location: US
+[0m18:52:00.537422 [info ] [MainThread]:   priority: interactive
+[0m18:52:00.542944 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:52:00.543032 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:52:00.545546 [info ] [MainThread]:   execution_project: dbt-demos
+[0m18:52:00.545546 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:52:00.545546 [info ] [MainThread]:   job_retries: 1
+[0m18:52:00.553123 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:52:00.553123 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:52:00.553123 [info ] [MainThread]:   gcs_bucket: None
+[0m18:52:00.553123 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:52:00.553123 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:52:00.563595 [debug] [MainThread]: On debug: select 1 as id
+[0m18:52:01.706859 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos&j=bq:US:d9faa95a-ef04-431f-8b1e-239202e56c85&page=queryresults
+[0m18:52:01.706859 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:52:01.711966 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:52:01.711966 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project dbt-demos: User does not have bigquery.jobs.create permission in project dbt-demos.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:52:01.717290 [debug] [MainThread]: Command `dbt debug` failed at 18:52:01.717290 after 2.36 seconds
+[0m18:52:01.717290 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:52:01.720416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269A1FDF8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269A29E2AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269A2334F10>]}
+[0m18:52:01.720416 [debug] [MainThread]: Flushing usage events
+[0m22:14:18.706198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000104FFC38C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001048036FED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000104FFC38A50>]}
+
+
+============================== 22:14:18.716425 | df776580-79b8-4286-949e-39c90055dec0 ==============================
+[0m22:14:18.716425 [info ] [MainThread]: Running with dbt=1.5.0
+[0m22:14:18.716425 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m22:14:19.896380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'df776580-79b8-4286-949e-39c90055dec0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001048104CF10>]}
+[0m22:14:19.924069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'df776580-79b8-4286-949e-39c90055dec0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010481035010>]}
+[0m22:14:19.954734 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m22:14:19.954734 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:14:19.960854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'df776580-79b8-4286-949e-39c90055dec0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010480D82E90>]}
+[0m22:14:22.109455 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Marts\mart_football_information.sql
+[0m22:14:22.149272 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Staging\stg_football_matches.sql
+[0m22:14:22.156581 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Staging\stg_football_rankings.sql
+[0m22:14:22.317019 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.soccer_538.example
+[0m22:14:22.327521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'df776580-79b8-4286-949e-39c90055dec0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010481063690>]}
+[0m22:14:22.420892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'df776580-79b8-4286-949e-39c90055dec0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000104811A4E10>]}
+[0m22:14:22.420892 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 353 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m22:14:22.431018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'df776580-79b8-4286-949e-39c90055dec0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000104FFF22310>]}
+[0m22:14:22.432094 [info ] [MainThread]: 
+[0m22:14:22.432094 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:14:22.443387 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-demos'
+[0m22:14:22.443387 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:14:23.732588 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt-demos, now create_dbt-demos_soccer_538)
+[0m22:14:23.732588 [debug] [ThreadPool]: Creating schema "database: "dbt-demos"
+schema: "soccer_538"
+"
+[0m22:14:23.763197 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:14:23.776848 [debug] [ThreadPool]: On create_dbt-demos_soccer_538: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "connection_name": "create_dbt-demos_soccer_538"} */
+create schema if not exists `dbt-demos`.`soccer_538`
+  
+[0m22:14:24.763076 [error] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos&j=bq:US:39925461-5100-4a7e-94b8-beae97851c3b&page=queryresults
+[0m22:14:24.763076 [debug] [ThreadPool]: BigQuery adapter: Unhandled error while running:
+macro create_schema
+[0m22:14:24.763076 [debug] [ThreadPool]: BigQuery adapter: Database Error
+  Access Denied: Project dbt-demos: User does not have bigquery.jobs.create permission in project dbt-demos.
+[0m22:14:24.763076 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:14:24.773234 [debug] [MainThread]: Connection 'create_dbt-demos_soccer_538' was properly closed.
+[0m22:14:24.775030 [info ] [MainThread]: 
+[0m22:14:24.778421 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 2.34 seconds (2.34s).
+[0m22:14:24.779852 [error] [MainThread]: Encountered an error:
+Database Error
+  Access Denied: Project dbt-demos: User does not have bigquery.jobs.create permission in project dbt-demos.
+[0m22:14:24.779852 [debug] [MainThread]: Command `dbt run` failed at 22:14:24.779852 after 6.18 seconds
+[0m22:14:24.783446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001048039AC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010480374D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000104FFF9A290>]}
+[0m22:14:24.783446 [debug] [MainThread]: Flushing usage events
+[0m22:22:18.628146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3286F8590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3286D6190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3287195D0>]}
+
+
+============================== 22:22:18.635499 | 7c3943d5-eb75-43cd-a4b8-3cb21317a2e0 ==============================
+[0m22:22:18.635499 [info ] [MainThread]: Running with dbt=1.5.0
+[0m22:22:18.635499 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m22:22:18.642318 [info ] [MainThread]: dbt version: 1.5.0
+[0m22:22:18.643136 [info ] [MainThread]: python version: 3.11.3
+[0m22:22:18.645221 [info ] [MainThread]: python path: C:\Users\Vin\AppData\Local\Programs\Python\Python311\python.exe
+[0m22:22:18.645221 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m22:22:18.645221 [info ] [MainThread]: Using profiles.yml file at C:\dbt_Projects\dbt_demo\Repo\dbt-guide-starting-point\profiles.yml
+[0m22:22:18.651232 [info ] [MainThread]: Using dbt_project.yml file at C:\dbt_Projects\dbt_demo\Repo\dbt-guide-starting-point\dbt_project.yml
+[0m22:22:18.652925 [info ] [MainThread]: Configuration:
+[0m22:22:19.566772 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:22:19.619891 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:22:19.619891 [info ] [MainThread]: Required dependencies:
+[0m22:22:19.619891 [debug] [MainThread]: Executing "git --help"
+[0m22:22:19.739415 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:22:19.739415 [debug] [MainThread]: STDERR: "b''"
+[0m22:22:19.739415 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:22:19.739415 [info ] [MainThread]: Connection:
+[0m22:22:19.745611 [info ] [MainThread]:   method: service-account
+[0m22:22:19.745611 [info ] [MainThread]:   database: dbt-demos
+[0m22:22:19.745611 [info ] [MainThread]:   schema: soccer_538
+[0m22:22:19.745611 [info ] [MainThread]:   location: US
+[0m22:22:19.745611 [info ] [MainThread]:   priority: interactive
+[0m22:22:19.755950 [info ] [MainThread]:   timeout_seconds: 300
+[0m22:22:19.755950 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m22:22:19.755950 [info ] [MainThread]:   execution_project: dbt-demos
+[0m22:22:19.755950 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m22:22:19.755950 [info ] [MainThread]:   job_retries: 1
+[0m22:22:19.766137 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m22:22:19.766137 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m22:22:19.766137 [info ] [MainThread]:   gcs_bucket: None
+[0m22:22:19.771839 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m22:22:19.771839 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:22:19.776506 [debug] [MainThread]: On debug: select 1 as id
+[0m22:22:20.916222 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos&j=bq:US:2b2e865f-9761-4075-8b4e-4964ddb151e3&page=queryresults
+[0m22:22:20.924772 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m22:22:20.926339 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:22:20.926339 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project dbt-demos: User does not have bigquery.jobs.create permission in project dbt-demos.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m22:22:20.926339 [debug] [MainThread]: Command `dbt debug` failed at 22:22:20.926339 after 2.38 seconds
+[0m22:22:20.932482 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:22:20.932482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3286D6310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C328CF6F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C326966510>]}
+[0m22:22:20.932482 [debug] [MainThread]: Flushing usage events
+[0m22:23:58.467687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211FB9D9D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211FBD0E490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211FB968F10>]}
+
+
+============================== 22:23:58.476060 | 210a183a-4bb7-423f-889c-147f491df914 ==============================
+[0m22:23:58.476060 [info ] [MainThread]: Running with dbt=1.5.0
+[0m22:23:58.476060 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m22:23:58.476060 [info ] [MainThread]: dbt version: 1.5.0
+[0m22:23:58.476060 [info ] [MainThread]: python version: 3.11.3
+[0m22:23:58.484870 [info ] [MainThread]: python path: C:\Users\Vin\AppData\Local\Programs\Python\Python311\python.exe
+[0m22:23:58.484870 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m22:23:58.484870 [info ] [MainThread]: Using profiles.yml file at C:\dbt_Projects\dbt_demo\Repo\dbt-guide-starting-point\profiles.yml
+[0m22:23:58.484870 [info ] [MainThread]: Using dbt_project.yml file at C:\dbt_Projects\dbt_demo\Repo\dbt-guide-starting-point\dbt_project.yml
+[0m22:23:58.492385 [info ] [MainThread]: Configuration:
+[0m22:23:59.376802 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:23:59.428328 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:23:59.428328 [info ] [MainThread]: Required dependencies:
+[0m22:23:59.428328 [debug] [MainThread]: Executing "git --help"
+[0m22:23:59.551907 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:23:59.551907 [debug] [MainThread]: STDERR: "b''"
+[0m22:23:59.551907 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:23:59.556939 [info ] [MainThread]: Connection:
+[0m22:23:59.556939 [info ] [MainThread]:   method: service-account
+[0m22:23:59.559523 [info ] [MainThread]:   database: dbt-demos-385702
+[0m22:23:59.562176 [info ] [MainThread]:   schema: soccer_538
+[0m22:23:59.562176 [info ] [MainThread]:   location: US
+[0m22:23:59.562176 [info ] [MainThread]:   priority: interactive
+[0m22:23:59.562176 [info ] [MainThread]:   timeout_seconds: 300
+[0m22:23:59.562176 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m22:23:59.562176 [info ] [MainThread]:   execution_project: dbt-demos-385702
+[0m22:23:59.572495 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m22:23:59.572960 [info ] [MainThread]:   job_retries: 1
+[0m22:23:59.572960 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m22:23:59.572960 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m22:23:59.580480 [info ] [MainThread]:   gcs_bucket: None
+[0m22:23:59.582763 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m22:23:59.582763 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:23:59.588880 [debug] [MainThread]: On debug: select 1 as id
+[0m22:24:02.024299 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:39ae6276-39b9-4df6-8673-9d292c9ba86b&page=queryresults
+[0m22:24:02.024299 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:24:02.033198 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:24:02.036651 [debug] [MainThread]: Command `dbt debug` succeeded at 22:24:02.036651 after 3.64 seconds
+[0m22:24:02.036651 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:24:02.036651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211FC0B8850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211FC092B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000211FB946810>]}
+[0m22:24:02.040674 [debug] [MainThread]: Flushing usage events
+[0m22:24:14.816559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002559D6D9CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002559D600E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002559D9B4510>]}
+
+
+============================== 22:24:14.825268 | f593d6b0-a203-49d1-bfee-1bf1c20c2927 ==============================
+[0m22:24:14.825268 [info ] [MainThread]: Running with dbt=1.5.0
+[0m22:24:14.829419 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m22:24:14.829419 [info ] [MainThread]: Setting up your profile.
+[0m22:25:00.535055 [debug] [MainThread]: Command `dbt init` succeeded at 22:25:00.535055 after 45.80 seconds
+[0m22:25:00.535055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002559D76FB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002559DC60990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255975DFC90>]}
+[0m22:25:00.541254 [debug] [MainThread]: Flushing usage events
+[0m22:25:24.446365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE4CD7D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE4D09B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE4CF8CD0>]}
+
+
+============================== 22:25:24.453919 | 2fbfc415-c5d9-4ace-9dd8-55fc4c372dd8 ==============================
+[0m22:25:24.453919 [info ] [MainThread]: Running with dbt=1.5.0
+[0m22:25:24.453919 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m22:25:25.427583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2fbfc415-c5d9-4ace-9dd8-55fc4c372dd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE5EAEB10>]}
+[0m22:25:25.463137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2fbfc415-c5d9-4ace-9dd8-55fc4c372dd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE610F4D0>]}
+[0m22:25:25.491951 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m22:25:25.516401 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m22:25:25.521656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2fbfc415-c5d9-4ace-9dd8-55fc4c372dd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE6107390>]}
+[0m22:25:27.646775 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Marts\mart_football_information.sql
+[0m22:25:27.689028 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Staging\stg_football_matches.sql
+[0m22:25:27.699460 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Staging\stg_football_rankings.sql
+[0m22:25:27.834400 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.soccer_538.example
+[0m22:25:27.844723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2fbfc415-c5d9-4ace-9dd8-55fc4c372dd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE71CBD90>]}
+[0m22:25:27.925924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2fbfc415-c5d9-4ace-9dd8-55fc4c372dd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE72AB110>]}
+[0m22:25:27.928104 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 353 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m22:25:27.928104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2fbfc415-c5d9-4ace-9dd8-55fc4c372dd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE6184290>]}
+[0m22:25:27.928104 [info ] [MainThread]: 
+[0m22:25:27.928104 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:25:27.941462 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-demos-385702'
+[0m22:25:27.941462 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:25:29.048055 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt-demos-385702, now create_dbt-demos-385702_soccer_538)
+[0m22:25:29.048055 [debug] [ThreadPool]: Creating schema "database: "dbt-demos-385702"
+schema: "soccer_538"
+"
+[0m22:25:29.072693 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:25:29.080015 [debug] [ThreadPool]: On create_dbt-demos-385702_soccer_538: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "connection_name": "create_dbt-demos-385702_soccer_538"} */
+create schema if not exists `dbt-demos-385702`.`soccer_538`
+  
+[0m22:25:31.280478 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:dca4a670-ea4d-424f-841f-bee7ad3c975e&page=queryresults
+[0m22:25:31.290662 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-demos-385702_soccer_538'
+[0m22:25:31.294461 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:25:32.515602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2fbfc415-c5d9-4ace-9dd8-55fc4c372dd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE71CB910>]}
+[0m22:25:32.519128 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:25:32.519128 [info ] [MainThread]: 
+[0m22:25:32.646347 [debug] [Thread-1 (]: Began running node model.soccer_538.stg_football_matches
+[0m22:25:32.651554 [info ] [Thread-1 (]: 1 of 3 START sql view model soccer_538.stg_football_matches .................... [RUN]
+[0m22:25:32.651554 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.soccer_538.stg_football_matches'
+[0m22:25:32.651554 [debug] [Thread-1 (]: Began compiling node model.soccer_538.stg_football_matches
+[0m22:25:32.651554 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.stg_football_matches"
+[0m22:25:32.672543 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_matches (compile): 22:25:32.651554 => 22:25:32.672543
+[0m22:25:32.678107 [debug] [Thread-1 (]: Began executing node model.soccer_538.stg_football_matches
+[0m22:25:32.745300 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.stg_football_matches"
+[0m22:25:32.759664 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:25:32.759664 [debug] [Thread-1 (]: On model.soccer_538.stg_football_matches: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.stg_football_matches"} */
+
+
+  create or replace view `dbt-demos-385702`.`soccer_538`.`stg_football_matches`
+  OPTIONS()
+  as SELECT * FROM dbt-demos.538_football.stg_football_matches;
+
+
+[0m22:25:34.556366 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:27e2c895-292d-49ef-abf6-f277277c4eaa&page=queryresults
+[0m22:25:34.564440 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_matches (execute): 22:25:32.678107 => 22:25:34.564440
+[0m22:25:34.649508 [debug] [Thread-1 (]: Database Error in model stg_football_matches (models\538_football\Staging\stg_football_matches.sql)
+  Access Denied: Table dbt-demos:538_football.stg_football_matches: User does not have permission to query table dbt-demos:538_football.stg_football_matches, or perhaps it does not exist in location US.
+  compiled Code at target\run\soccer_538\models\538_football\Staging\stg_football_matches.sql
+[0m22:25:34.659645 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2fbfc415-c5d9-4ace-9dd8-55fc4c372dd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE71B4350>]}
+[0m22:25:34.659645 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model soccer_538.stg_football_matches ........... [[31mERROR[0m in 2.01s]
+[0m22:25:34.664273 [debug] [Thread-1 (]: Finished running node model.soccer_538.stg_football_matches
+[0m22:25:34.665681 [debug] [Thread-1 (]: Began running node model.soccer_538.stg_football_rankings
+[0m22:25:34.666308 [info ] [Thread-1 (]: 2 of 3 START sql view model soccer_538.stg_football_rankings ................... [RUN]
+[0m22:25:34.670016 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.soccer_538.stg_football_matches, now model.soccer_538.stg_football_rankings)
+[0m22:25:34.670707 [debug] [Thread-1 (]: Began compiling node model.soccer_538.stg_football_rankings
+[0m22:25:34.672731 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.stg_football_rankings"
+[0m22:25:34.681165 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_rankings (compile): 22:25:34.670707 => 22:25:34.681165
+[0m22:25:34.681165 [debug] [Thread-1 (]: Began executing node model.soccer_538.stg_football_rankings
+[0m22:25:34.691385 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.stg_football_rankings"
+[0m22:25:34.704972 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:25:34.704972 [debug] [Thread-1 (]: On model.soccer_538.stg_football_rankings: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.stg_football_rankings"} */
+
+
+  create or replace view `dbt-demos-385702`.`soccer_538`.`stg_football_rankings`
+  OPTIONS()
+  as SELECT * FROM dbt-demos.538_football.stg_football_rankings;
+
+
+[0m22:25:35.992407 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:79669a31-e9ed-4101-bd68-c73caa575bbd&page=queryresults
+[0m22:25:35.996425 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_rankings (execute): 22:25:34.681165 => 22:25:35.996425
+[0m22:25:36.004895 [debug] [Thread-1 (]: Database Error in model stg_football_rankings (models\538_football\Staging\stg_football_rankings.sql)
+  Access Denied: Table dbt-demos:538_football.stg_football_rankings: User does not have permission to query table dbt-demos:538_football.stg_football_rankings, or perhaps it does not exist in location US.
+  compiled Code at target\run\soccer_538\models\538_football\Staging\stg_football_rankings.sql
+[0m22:25:36.004895 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2fbfc415-c5d9-4ace-9dd8-55fc4c372dd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE73C3090>]}
+[0m22:25:36.004895 [error] [Thread-1 (]: 2 of 3 ERROR creating sql view model soccer_538.stg_football_rankings .......... [[31mERROR[0m in 1.34s]
+[0m22:25:36.014881 [debug] [Thread-1 (]: Finished running node model.soccer_538.stg_football_rankings
+[0m22:25:36.015766 [debug] [Thread-1 (]: Began running node model.soccer_538.mart_football_information
+[0m22:25:36.015766 [info ] [Thread-1 (]: 3 of 3 SKIP relation soccer_538.mart_football_information ...................... [[33mSKIP[0m]
+[0m22:25:36.021320 [debug] [Thread-1 (]: Finished running node model.soccer_538.mart_football_information
+[0m22:25:36.024405 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:25:36.024405 [debug] [MainThread]: Connection 'create_dbt-demos-385702_soccer_538' was properly closed.
+[0m22:25:36.024405 [debug] [MainThread]: Connection 'list_dbt-demos-385702_soccer_538' was properly closed.
+[0m22:25:36.029507 [debug] [MainThread]: Connection 'model.soccer_538.stg_football_rankings' was properly closed.
+[0m22:25:36.029507 [info ] [MainThread]: 
+[0m22:25:36.029507 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 8.10 seconds (8.10s).
+[0m22:25:36.034214 [debug] [MainThread]: Command end result
+[0m22:25:36.137996 [info ] [MainThread]: 
+[0m22:25:36.137996 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m22:25:36.137996 [info ] [MainThread]: 
+[0m22:25:36.148254 [error] [MainThread]: [33mDatabase Error in model stg_football_matches (models\538_football\Staging\stg_football_matches.sql)[0m
+[0m22:25:36.151271 [error] [MainThread]:   Access Denied: Table dbt-demos:538_football.stg_football_matches: User does not have permission to query table dbt-demos:538_football.stg_football_matches, or perhaps it does not exist in location US.
+[0m22:25:36.151271 [error] [MainThread]:   compiled Code at target\run\soccer_538\models\538_football\Staging\stg_football_matches.sql
+[0m22:25:36.151271 [info ] [MainThread]: 
+[0m22:25:36.151271 [error] [MainThread]: [33mDatabase Error in model stg_football_rankings (models\538_football\Staging\stg_football_rankings.sql)[0m
+[0m22:25:36.158372 [error] [MainThread]:   Access Denied: Table dbt-demos:538_football.stg_football_rankings: User does not have permission to query table dbt-demos:538_football.stg_football_rankings, or perhaps it does not exist in location US.
+[0m22:25:36.158372 [error] [MainThread]:   compiled Code at target\run\soccer_538\models\538_football\Staging\stg_football_rankings.sql
+[0m22:25:36.158372 [info ] [MainThread]: 
+[0m22:25:36.158372 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=1 TOTAL=3
+[0m22:25:36.158372 [debug] [MainThread]: Command `dbt run` failed at 22:25:36.158372 after 11.80 seconds
+[0m22:25:36.158372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE5424110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EE4C30F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EDE5BF090>]}
+[0m22:25:36.168740 [debug] [MainThread]: Flushing usage events
+[0m22:29:51.333303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3CAAC0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3C788FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3C9E5B90>]}
+
+
+============================== 22:29:51.348039 | 92af1423-3939-461f-8f53-75b356184af9 ==============================
+[0m22:29:51.348039 [info ] [MainThread]: Running with dbt=1.5.0
+[0m22:29:51.348039 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m22:29:52.299460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '92af1423-3939-461f-8f53-75b356184af9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3D86E050>]}
+[0m22:29:52.331439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '92af1423-3939-461f-8f53-75b356184af9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3D831350>]}
+[0m22:29:52.356564 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m22:29:52.687161 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m22:29:52.687161 [debug] [MainThread]: Partial parsing: updated file: soccer_538://models\538_football\Staging\stg_football_rankings.sql
+[0m22:29:52.693429 [debug] [MainThread]: Partial parsing: updated file: soccer_538://models\538_football\Staging\stg_football_matches.sql
+[0m22:29:52.741998 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Staging\stg_football_rankings.sql
+[0m22:29:52.780032 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Staging\stg_football_matches.sql
+[0m22:29:52.842719 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.soccer_538.example
+[0m22:29:52.855206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '92af1423-3939-461f-8f53-75b356184af9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3D80F050>]}
+[0m22:29:52.928854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '92af1423-3939-461f-8f53-75b356184af9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3EBC92D0>]}
+[0m22:29:52.928854 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 353 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m22:29:52.936373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '92af1423-3939-461f-8f53-75b356184af9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3D8AC950>]}
+[0m22:29:52.936373 [info ] [MainThread]: 
+[0m22:29:52.936373 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:29:52.946514 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-demos-385702'
+[0m22:29:52.946514 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:29:54.049642 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-demos-385702_soccer_538'
+[0m22:29:54.058158 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:29:55.014208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '92af1423-3939-461f-8f53-75b356184af9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3BF92E90>]}
+[0m22:29:55.014208 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:29:55.014208 [info ] [MainThread]: 
+[0m22:29:55.035017 [debug] [Thread-1 (]: Began running node model.soccer_538.stg_football_matches
+[0m22:29:55.035017 [info ] [Thread-1 (]: 1 of 3 START sql view model soccer_538.stg_football_matches .................... [RUN]
+[0m22:29:55.035017 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.soccer_538.stg_football_matches'
+[0m22:29:55.035017 [debug] [Thread-1 (]: Began compiling node model.soccer_538.stg_football_matches
+[0m22:29:55.045408 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.stg_football_matches"
+[0m22:29:55.066368 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_matches (compile): 22:29:55.035017 => 22:29:55.060731
+[0m22:29:55.066368 [debug] [Thread-1 (]: Began executing node model.soccer_538.stg_football_matches
+[0m22:29:55.139649 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.stg_football_matches"
+[0m22:29:55.166142 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:29:55.170345 [debug] [Thread-1 (]: On model.soccer_538.stg_football_matches: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.stg_football_matches"} */
+
+
+  create or replace view `dbt-demos-385702`.`soccer_538`.`stg_football_matches`
+  OPTIONS()
+  as SELECT * FROM dbt-demos-385702.538_football.stg_football_matches;
+
+
+[0m22:29:56.123417 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Missing whitespace between literal and alias at [6:40]')
+[0m22:29:57.523870 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:6287b2ac-8c09-47f9-8ead-58f9a5bbbb34&page=queryresults
+[0m22:29:57.523870 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_matches (execute): 22:29:55.066368 => 22:29:57.523870
+[0m22:29:57.564359 [debug] [Thread-1 (]: Database Error in model stg_football_matches (models\538_football\Staging\stg_football_matches.sql)
+  Syntax error: Missing whitespace between literal and alias at [6:40]
+  compiled Code at target\run\soccer_538\models\538_football\Staging\stg_football_matches.sql
+[0m22:29:57.564359 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92af1423-3939-461f-8f53-75b356184af9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3DB04CD0>]}
+[0m22:29:57.569510 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model soccer_538.stg_football_matches ........... [[31mERROR[0m in 2.53s]
+[0m22:29:57.569510 [debug] [Thread-1 (]: Finished running node model.soccer_538.stg_football_matches
+[0m22:29:57.569510 [debug] [Thread-1 (]: Began running node model.soccer_538.stg_football_rankings
+[0m22:29:57.569510 [info ] [Thread-1 (]: 2 of 3 START sql view model soccer_538.stg_football_rankings ................... [RUN]
+[0m22:29:57.579938 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.soccer_538.stg_football_matches, now model.soccer_538.stg_football_rankings)
+[0m22:29:57.581081 [debug] [Thread-1 (]: Began compiling node model.soccer_538.stg_football_rankings
+[0m22:29:57.590000 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.stg_football_rankings"
+[0m22:29:57.604211 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_rankings (compile): 22:29:57.582374 => 22:29:57.604211
+[0m22:29:57.610228 [debug] [Thread-1 (]: Began executing node model.soccer_538.stg_football_rankings
+[0m22:29:57.612340 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.stg_football_rankings"
+[0m22:29:57.631144 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:29:57.631144 [debug] [Thread-1 (]: On model.soccer_538.stg_football_rankings: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.stg_football_rankings"} */
+
+
+  create or replace view `dbt-demos-385702`.`soccer_538`.`stg_football_rankings`
+  OPTIONS()
+  as SELECT * FROM dbt-demos-385702.538_football.stg_football_rankings;
+
+
+[0m22:29:58.646984 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Missing whitespace between literal and alias at [6:40]')
+[0m22:29:59.570230 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:f5bbf7eb-614c-4630-9601-3ecb7e794bbd&page=queryresults
+[0m22:29:59.570230 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_rankings (execute): 22:29:57.610228 => 22:29:59.570230
+[0m22:29:59.584204 [debug] [Thread-1 (]: Database Error in model stg_football_rankings (models\538_football\Staging\stg_football_rankings.sql)
+  Syntax error: Missing whitespace between literal and alias at [6:40]
+  compiled Code at target\run\soccer_538\models\538_football\Staging\stg_football_rankings.sql
+[0m22:29:59.584204 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92af1423-3939-461f-8f53-75b356184af9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3EC54E50>]}
+[0m22:29:59.590911 [error] [Thread-1 (]: 2 of 3 ERROR creating sql view model soccer_538.stg_football_rankings .......... [[31mERROR[0m in 2.01s]
+[0m22:29:59.590911 [debug] [Thread-1 (]: Finished running node model.soccer_538.stg_football_rankings
+[0m22:29:59.590911 [debug] [Thread-1 (]: Began running node model.soccer_538.mart_football_information
+[0m22:29:59.590911 [info ] [Thread-1 (]: 3 of 3 SKIP relation soccer_538.mart_football_information ...................... [[33mSKIP[0m]
+[0m22:29:59.598044 [debug] [Thread-1 (]: Finished running node model.soccer_538.mart_football_information
+[0m22:29:59.606326 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:29:59.606326 [debug] [MainThread]: Connection 'list_dbt-demos-385702' was properly closed.
+[0m22:29:59.606326 [debug] [MainThread]: Connection 'list_dbt-demos-385702_soccer_538' was properly closed.
+[0m22:29:59.606326 [debug] [MainThread]: Connection 'model.soccer_538.stg_football_rankings' was properly closed.
+[0m22:29:59.606326 [info ] [MainThread]: 
+[0m22:29:59.614701 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 6.67 seconds (6.67s).
+[0m22:29:59.614701 [debug] [MainThread]: Command end result
+[0m22:29:59.778827 [info ] [MainThread]: 
+[0m22:29:59.784932 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m22:29:59.789218 [info ] [MainThread]: 
+[0m22:29:59.789952 [error] [MainThread]: [33mDatabase Error in model stg_football_matches (models\538_football\Staging\stg_football_matches.sql)[0m
+[0m22:29:59.791776 [error] [MainThread]:   Syntax error: Missing whitespace between literal and alias at [6:40]
+[0m22:29:59.793300 [error] [MainThread]:   compiled Code at target\run\soccer_538\models\538_football\Staging\stg_football_matches.sql
+[0m22:29:59.793300 [info ] [MainThread]: 
+[0m22:29:59.793300 [error] [MainThread]: [33mDatabase Error in model stg_football_rankings (models\538_football\Staging\stg_football_rankings.sql)[0m
+[0m22:29:59.801803 [error] [MainThread]:   Syntax error: Missing whitespace between literal and alias at [6:40]
+[0m22:29:59.801803 [error] [MainThread]:   compiled Code at target\run\soccer_538\models\538_football\Staging\stg_football_rankings.sql
+[0m22:29:59.808357 [info ] [MainThread]: 
+[0m22:29:59.810028 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=1 TOTAL=3
+[0m22:29:59.810028 [debug] [MainThread]: Command `dbt run` failed at 22:29:59.810028 after 8.55 seconds
+[0m22:29:59.810028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3CE2C110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3CE03450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013C3C677D10>]}
+[0m22:29:59.810028 [debug] [MainThread]: Flushing usage events
+[0m22:33:45.239209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2A9F1E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2AC51750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2A928C50>]}
+
+
+============================== 22:33:45.245550 | dfc475e6-92cb-42c4-8083-a2db08b955d7 ==============================
+[0m22:33:45.245550 [info ] [MainThread]: Running with dbt=1.5.0
+[0m22:33:45.245550 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m22:33:46.192982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dfc475e6-92cb-42c4-8083-a2db08b955d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2BA65BD0>]}
+[0m22:33:46.225290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dfc475e6-92cb-42c4-8083-a2db08b955d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2A9284D0>]}
+[0m22:33:46.255045 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m22:33:46.567110 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m22:33:46.567110 [debug] [MainThread]: Partial parsing: updated file: soccer_538://models\538_football\Staging\stg_football_matches.sql
+[0m22:33:46.567110 [debug] [MainThread]: Partial parsing: updated file: soccer_538://models\538_football\Staging\stg_football_rankings.sql
+[0m22:33:46.623065 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Staging\stg_football_matches.sql
+[0m22:33:46.660080 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Staging\stg_football_rankings.sql
+[0m22:33:46.722682 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.soccer_538.example
+[0m22:33:46.743101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dfc475e6-92cb-42c4-8083-a2db08b955d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2B0A5590>]}
+[0m22:33:46.815579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dfc475e6-92cb-42c4-8083-a2db08b955d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2CE19010>]}
+[0m22:33:46.815579 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 353 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m22:33:46.823622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dfc475e6-92cb-42c4-8083-a2db08b955d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2CE1BED0>]}
+[0m22:33:46.825664 [info ] [MainThread]: 
+[0m22:33:46.825664 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:33:46.836520 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-demos-385702'
+[0m22:33:46.836520 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:33:48.030626 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-demos-385702_soccer_538'
+[0m22:33:48.030626 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:33:48.955298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dfc475e6-92cb-42c4-8083-a2db08b955d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2A202D50>]}
+[0m22:33:48.957336 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:33:48.957336 [info ] [MainThread]: 
+[0m22:33:48.975607 [debug] [Thread-1 (]: Began running node model.soccer_538.stg_football_matches
+[0m22:33:48.975607 [info ] [Thread-1 (]: 1 of 3 START sql view model soccer_538.stg_football_matches .................... [RUN]
+[0m22:33:48.975607 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.soccer_538.stg_football_matches'
+[0m22:33:48.975607 [debug] [Thread-1 (]: Began compiling node model.soccer_538.stg_football_matches
+[0m22:33:48.985633 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.stg_football_matches"
+[0m22:33:48.996343 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_matches (compile): 22:33:48.975607 => 22:33:48.996343
+[0m22:33:49.006003 [debug] [Thread-1 (]: Began executing node model.soccer_538.stg_football_matches
+[0m22:33:49.085205 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.stg_football_matches"
+[0m22:33:49.101841 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:33:49.110097 [debug] [Thread-1 (]: On model.soccer_538.stg_football_matches: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.stg_football_matches"} */
+
+
+  create or replace view `dbt-demos-385702`.`soccer_538`.`stg_football_matches`
+  OPTIONS()
+  as SELECT * FROM `dbt-demos-385702.538_football.stg_football_matches`;
+
+
+[0m22:33:51.202917 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:c2ac465b-540b-42c0-8647-d3a00a4fbfb4&page=queryresults
+[0m22:33:51.238138 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_matches (execute): 22:33:49.006276 => 22:33:51.238138
+[0m22:33:51.243659 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dfc475e6-92cb-42c4-8083-a2db08b955d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2B9C4E10>]}
+[0m22:33:51.244567 [info ] [Thread-1 (]: 1 of 3 OK created sql view model soccer_538.stg_football_matches ............... [[32mCREATE VIEW (0 processed)[0m in 2.26s]
+[0m22:33:51.248683 [debug] [Thread-1 (]: Finished running node model.soccer_538.stg_football_matches
+[0m22:33:51.248788 [debug] [Thread-1 (]: Began running node model.soccer_538.stg_football_rankings
+[0m22:33:51.248788 [info ] [Thread-1 (]: 2 of 3 START sql view model soccer_538.stg_football_rankings ................... [RUN]
+[0m22:33:51.248788 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.soccer_538.stg_football_matches, now model.soccer_538.stg_football_rankings)
+[0m22:33:51.248788 [debug] [Thread-1 (]: Began compiling node model.soccer_538.stg_football_rankings
+[0m22:33:51.259773 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.stg_football_rankings"
+[0m22:33:51.279931 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_rankings (compile): 22:33:51.248788 => 22:33:51.279931
+[0m22:33:51.279931 [debug] [Thread-1 (]: Began executing node model.soccer_538.stg_football_rankings
+[0m22:33:51.291009 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.stg_football_rankings"
+[0m22:33:51.300701 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:33:51.307297 [debug] [Thread-1 (]: On model.soccer_538.stg_football_rankings: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.stg_football_rankings"} */
+
+
+  create or replace view `dbt-demos-385702`.`soccer_538`.`stg_football_rankings`
+  OPTIONS()
+  as SELECT * FROM `dbt-demos-385702.538_football.stg_football_rankings`;
+
+
+[0m22:33:53.036266 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:04c2e086-2433-4b9f-970d-e9a3f28e4091&page=queryresults
+[0m22:33:53.043795 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_rankings (execute): 22:33:51.279931 => 22:33:53.043795
+[0m22:33:53.043795 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dfc475e6-92cb-42c4-8083-a2db08b955d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2BD5E250>]}
+[0m22:33:53.043795 [info ] [Thread-1 (]: 2 of 3 OK created sql view model soccer_538.stg_football_rankings .............. [[32mCREATE VIEW (0 processed)[0m in 1.80s]
+[0m22:33:53.052234 [debug] [Thread-1 (]: Finished running node model.soccer_538.stg_football_rankings
+[0m22:33:53.054249 [debug] [Thread-1 (]: Began running node model.soccer_538.mart_football_information
+[0m22:33:53.054249 [info ] [Thread-1 (]: 3 of 3 START sql view model soccer_538.mart_football_information ............... [RUN]
+[0m22:33:53.054249 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.soccer_538.stg_football_rankings, now model.soccer_538.mart_football_information)
+[0m22:33:53.054249 [debug] [Thread-1 (]: Began compiling node model.soccer_538.mart_football_information
+[0m22:33:53.065042 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.mart_football_information"
+[0m22:33:53.076559 [debug] [Thread-1 (]: Timing info for model.soccer_538.mart_football_information (compile): 22:33:53.060626 => 22:33:53.076559
+[0m22:33:53.076559 [debug] [Thread-1 (]: Began executing node model.soccer_538.mart_football_information
+[0m22:33:53.093377 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.mart_football_information"
+[0m22:33:53.106228 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:33:53.106228 [debug] [Thread-1 (]: On model.soccer_538.mart_football_information: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.mart_football_information"} */
+
+
+  create or replace view `dbt-demos-385702`.`soccer_538`.`mart_football_information`
+  OPTIONS()
+  as with
+  qryMatches as (
+    SELECT * FROM `dbt-demos-385702`.`soccer_538`.`stg_football_matches` where league = 'Barclays Premier League'
+    ),
+  qryRankings as (
+    SELECT * FROM `dbt-demos-385702`.`soccer_538`.`stg_football_rankings` where league = 'Barclays Premier League'
+  ),
+
+  qryFinal as (
+    select
+      qryMatches.season,
+      qryMatches.date,
+      qryMatches.league,
+      qryMatches.team1,
+      qryMatches.team2,
+      team_one.rank as team1_rank,
+      team_two.rank as team2_rank
+    from
+      qryMatches join
+      qryRankings as team_one on
+        (qryMatches.team1 = team_one.name) join
+      qryRankings as team_two on
+        (qryMatches.team2 = team_two.name)
+  )
+
+select * from qryFinal;
+
+
+[0m22:33:54.991349 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:7b38fcad-6778-458d-a4c2-a94f53d55cb6&page=queryresults
+[0m22:33:54.991349 [debug] [Thread-1 (]: Timing info for model.soccer_538.mart_football_information (execute): 22:33:53.076559 => 22:33:54.991349
+[0m22:33:54.997878 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dfc475e6-92cb-42c4-8083-a2db08b955d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2BD26D10>]}
+[0m22:33:54.999431 [info ] [Thread-1 (]: 3 of 3 OK created sql view model soccer_538.mart_football_information .......... [[32mCREATE VIEW (0 processed)[0m in 1.94s]
+[0m22:33:55.003448 [debug] [Thread-1 (]: Finished running node model.soccer_538.mart_football_information
+[0m22:33:55.008129 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:33:55.008129 [debug] [MainThread]: Connection 'list_dbt-demos-385702' was properly closed.
+[0m22:33:55.008129 [debug] [MainThread]: Connection 'list_dbt-demos-385702_soccer_538' was properly closed.
+[0m22:33:55.008129 [debug] [MainThread]: Connection 'model.soccer_538.mart_football_information' was properly closed.
+[0m22:33:55.008129 [info ] [MainThread]: 
+[0m22:33:55.008129 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 8.18 seconds (8.18s).
+[0m22:33:55.018364 [debug] [MainThread]: Command end result
+[0m22:33:55.081522 [info ] [MainThread]: 
+[0m22:33:55.088541 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:33:55.090716 [info ] [MainThread]: 
+[0m22:33:55.090716 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m22:33:55.090716 [debug] [MainThread]: Command `dbt run` succeeded at 22:33:55.090716 after 9.93 seconds
+[0m22:33:55.096731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2B073410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2476FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D24778210>]}
+[0m22:33:55.096731 [debug] [MainThread]: Flushing usage events
+[0m22:49:36.996995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B32A6F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B32A7210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B301BB50>]}
+
+
+============================== 22:49:37.005211 | 0d3dc625-0598-4756-8934-a0b5bd925a4b ==============================
+[0m22:49:37.005211 [info ] [MainThread]: Running with dbt=1.5.0
+[0m22:49:37.005211 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m22:49:38.004557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0d3dc625-0598-4756-8934-a0b5bd925a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B4426A10>]}
+[0m22:49:38.045714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0d3dc625-0598-4756-8934-a0b5bd925a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B442EF10>]}
+[0m22:49:38.090453 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m22:49:38.416998 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:49:38.420027 [debug] [MainThread]: Partial parsing: updated file: soccer_538://models\538_football\Staging\stg_football_matches.sql
+[0m22:49:38.458015 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Staging\stg_football_matches.sql
+[0m22:49:38.551969 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.soccer_538.example
+[0m22:49:38.572390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0d3dc625-0598-4756-8934-a0b5bd925a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B445E490>]}
+[0m22:49:38.634996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0d3dc625-0598-4756-8934-a0b5bd925a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B44C6FD0>]}
+[0m22:49:38.645306 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 353 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m22:49:38.645306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0d3dc625-0598-4756-8934-a0b5bd925a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B41AFA10>]}
+[0m22:49:38.648417 [info ] [MainThread]: 
+[0m22:49:38.648417 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:49:38.655733 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-demos-385702'
+[0m22:49:38.655733 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:49:39.928430 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-demos-385702_soccer_538'
+[0m22:49:39.928430 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:49:40.861853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0d3dc625-0598-4756-8934-a0b5bd925a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B28D2D50>]}
+[0m22:49:40.861853 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:49:40.861853 [info ] [MainThread]: 
+[0m22:49:40.881967 [debug] [Thread-1 (]: Began running node model.soccer_538.stg_football_matches
+[0m22:49:40.885099 [info ] [Thread-1 (]: 1 of 3 START sql view model soccer_538.stg_football_matches .................... [RUN]
+[0m22:49:40.886204 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.soccer_538.stg_football_matches'
+[0m22:49:40.886204 [debug] [Thread-1 (]: Began compiling node model.soccer_538.stg_football_matches
+[0m22:49:40.892435 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.stg_football_matches"
+[0m22:49:40.913346 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_matches (compile): 22:49:40.892263 => 22:49:40.913346
+[0m22:49:40.913346 [debug] [Thread-1 (]: Began executing node model.soccer_538.stg_football_matches
+[0m22:49:40.997114 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.stg_football_matches"
+[0m22:49:41.012995 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:49:41.017803 [debug] [Thread-1 (]: On model.soccer_538.stg_football_matches: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.stg_football_matches"} */
+
+
+  create or replace view `dbt-demos-385702`.`soccer_538`.`stg_football_matches`
+  OPTIONS()
+  as 
+
+SELECT * FROM `dbt-demos-385702.538_football.stg_football_matches`;
+
+
+[0m22:49:42.907413 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:4f6f7458-46fb-4590-93b4-be5eb2b795e8&page=queryresults
+[0m22:49:42.951740 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_matches (execute): 22:49:40.916361 => 22:49:42.951740
+[0m22:49:42.960214 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0d3dc625-0598-4756-8934-a0b5bd925a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B4135190>]}
+[0m22:49:42.960214 [info ] [Thread-1 (]: 1 of 3 OK created sql view model soccer_538.stg_football_matches ............... [[32mCREATE VIEW (0 processed)[0m in 2.07s]
+[0m22:49:42.960214 [debug] [Thread-1 (]: Finished running node model.soccer_538.stg_football_matches
+[0m22:49:42.966232 [debug] [Thread-1 (]: Began running node model.soccer_538.stg_football_rankings
+[0m22:49:42.967915 [info ] [Thread-1 (]: 2 of 3 START sql view model soccer_538.stg_football_rankings ................... [RUN]
+[0m22:49:42.971145 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.soccer_538.stg_football_matches, now model.soccer_538.stg_football_rankings)
+[0m22:49:42.971145 [debug] [Thread-1 (]: Began compiling node model.soccer_538.stg_football_rankings
+[0m22:49:42.971145 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.stg_football_rankings"
+[0m22:49:42.992009 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_rankings (compile): 22:49:42.971145 => 22:49:42.992009
+[0m22:49:42.992009 [debug] [Thread-1 (]: Began executing node model.soccer_538.stg_football_rankings
+[0m22:49:43.002359 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.stg_football_rankings"
+[0m22:49:43.014324 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:49:43.023691 [debug] [Thread-1 (]: On model.soccer_538.stg_football_rankings: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.stg_football_rankings"} */
+
+
+  create or replace view `dbt-demos-385702`.`soccer_538`.`stg_football_rankings`
+  OPTIONS()
+  as SELECT * FROM `dbt-demos-385702.538_football.stg_football_rankings`;
+
+
+[0m22:49:44.953468 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:d078a3f7-0b40-4d97-85ef-4cb37356cd4d&page=queryresults
+[0m22:49:44.961626 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_rankings (execute): 22:49:42.992009 => 22:49:44.961626
+[0m22:49:44.961626 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0d3dc625-0598-4756-8934-a0b5bd925a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B54AE950>]}
+[0m22:49:44.961626 [info ] [Thread-1 (]: 2 of 3 OK created sql view model soccer_538.stg_football_rankings .............. [[32mCREATE VIEW (0 processed)[0m in 1.99s]
+[0m22:49:44.961626 [debug] [Thread-1 (]: Finished running node model.soccer_538.stg_football_rankings
+[0m22:49:44.961626 [debug] [Thread-1 (]: Began running node model.soccer_538.mart_football_information
+[0m22:49:44.971780 [info ] [Thread-1 (]: 3 of 3 START sql view model soccer_538.mart_football_information ............... [RUN]
+[0m22:49:44.971780 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.soccer_538.stg_football_rankings, now model.soccer_538.mart_football_information)
+[0m22:49:44.978203 [debug] [Thread-1 (]: Began compiling node model.soccer_538.mart_football_information
+[0m22:49:44.993727 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.mart_football_information"
+[0m22:49:45.013355 [debug] [Thread-1 (]: Timing info for model.soccer_538.mart_football_information (compile): 22:49:44.978867 => 22:49:45.013355
+[0m22:49:45.013355 [debug] [Thread-1 (]: Began executing node model.soccer_538.mart_football_information
+[0m22:49:45.098960 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.mart_football_information"
+[0m22:49:45.118215 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:49:45.123316 [debug] [Thread-1 (]: On model.soccer_538.mart_football_information: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.mart_football_information"} */
+
+
+  create or replace view `dbt-demos-385702`.`soccer_538`.`mart_football_information`
+  OPTIONS()
+  as with
+  qryMatches as (
+    SELECT * FROM `dbt-demos-385702`.`soccer_538`.`stg_football_matches` where league = 'Barclays Premier League'
+    ),
+  qryRankings as (
+    SELECT * FROM `dbt-demos-385702`.`soccer_538`.`stg_football_rankings` where league = 'Barclays Premier League'
+  ),
+
+  qryFinal as (
+    select
+      qryMatches.season,
+      qryMatches.date,
+      qryMatches.league,
+      qryMatches.team1,
+      qryMatches.team2,
+      team_one.rank as team1_rank,
+      team_two.rank as team2_rank
+    from
+      qryMatches join
+      qryRankings as team_one on
+        (qryMatches.team1 = team_one.name) join
+      qryRankings as team_two on
+        (qryMatches.team2 = team_two.name)
+  )
+
+select * from qryFinal;
+
+
+[0m22:49:46.901607 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:7968cdf0-010f-42bc-8573-9918cdce9e68&page=queryresults
+[0m22:49:46.901607 [debug] [Thread-1 (]: Timing info for model.soccer_538.mart_football_information (execute): 22:49:45.013355 => 22:49:46.901607
+[0m22:49:46.910474 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0d3dc625-0598-4756-8934-a0b5bd925a4b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B28B9250>]}
+[0m22:49:46.910474 [info ] [Thread-1 (]: 3 of 3 OK created sql view model soccer_538.mart_football_information .......... [[32mCREATE VIEW (0 processed)[0m in 1.94s]
+[0m22:49:46.910474 [debug] [Thread-1 (]: Finished running node model.soccer_538.mart_football_information
+[0m22:49:46.921765 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:49:46.921765 [debug] [MainThread]: Connection 'list_dbt-demos-385702' was properly closed.
+[0m22:49:46.925782 [debug] [MainThread]: Connection 'list_dbt-demos-385702_soccer_538' was properly closed.
+[0m22:49:46.925782 [debug] [MainThread]: Connection 'model.soccer_538.mart_football_information' was properly closed.
+[0m22:49:46.925782 [info ] [MainThread]: 
+[0m22:49:46.925782 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 8.28 seconds (8.28s).
+[0m22:49:46.934146 [debug] [MainThread]: Command end result
+[0m22:49:47.006045 [info ] [MainThread]: 
+[0m22:49:47.006518 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:49:47.006518 [info ] [MainThread]: 
+[0m22:49:47.006518 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m22:49:47.014113 [debug] [MainThread]: Command `dbt run` succeeded at 22:49:47.014113 after 10.09 seconds
+[0m22:49:47.014113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B308A810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5B302C150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5ACEAF090>]}
+[0m22:49:47.016959 [debug] [MainThread]: Flushing usage events
+[0m22:53:02.647816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CA0B8590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CA0C8590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CA0B8F90>]}
+
+
+============================== 22:53:02.647816 | d4c2b058-6d67-4688-abe4-bddeaace9fdf ==============================
+[0m22:53:02.647816 [info ] [MainThread]: Running with dbt=1.5.0
+[0m22:53:02.657962 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m22:53:03.611684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd4c2b058-6d67-4688-abe4-bddeaace9fdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CA7E2890>]}
+[0m22:53:03.642801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd4c2b058-6d67-4688-abe4-bddeaace9fdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CB4CCA90>]}
+[0m22:53:03.685333 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m22:53:03.706300 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m22:53:03.706300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd4c2b058-6d67-4688-abe4-bddeaace9fdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CB4B6610>]}
+[0m22:53:05.809765 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Marts\mart_football_information.sql
+[0m22:53:05.846000 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Staging\stg_football_matches.sql
+[0m22:53:05.846000 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Staging\stg_football_rankings.sql
+[0m22:53:06.001548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd4c2b058-6d67-4688-abe4-bddeaace9fdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CB563690>]}
+[0m22:53:06.064091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd4c2b058-6d67-4688-abe4-bddeaace9fdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CC669850>]}
+[0m22:53:06.071720 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 353 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m22:53:06.075296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4c2b058-6d67-4688-abe4-bddeaace9fdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CB512390>]}
+[0m22:53:06.078846 [info ] [MainThread]: 
+[0m22:53:06.080944 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:53:06.087088 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-demos-385702'
+[0m22:53:06.087088 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:53:07.195730 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-demos-385702_soccer_538'
+[0m22:53:07.200329 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:53:08.119397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4c2b058-6d67-4688-abe4-bddeaace9fdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CB4E2D90>]}
+[0m22:53:08.119397 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:53:08.127175 [info ] [MainThread]: 
+[0m22:53:08.140519 [debug] [Thread-1 (]: Began running node model.soccer_538.stg_football_matches
+[0m22:53:08.140519 [info ] [Thread-1 (]: 1 of 3 START sql view model soccer_538.stg_football_matches .................... [RUN]
+[0m22:53:08.144396 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.soccer_538.stg_football_matches'
+[0m22:53:08.144396 [debug] [Thread-1 (]: Began compiling node model.soccer_538.stg_football_matches
+[0m22:53:08.151061 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.stg_football_matches"
+[0m22:53:08.172075 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_matches (compile): 22:53:08.151061 => 22:53:08.172075
+[0m22:53:08.175599 [debug] [Thread-1 (]: Began executing node model.soccer_538.stg_football_matches
+[0m22:53:08.257423 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.stg_football_matches"
+[0m22:53:08.275396 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:53:08.280514 [debug] [Thread-1 (]: On model.soccer_538.stg_football_matches: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.stg_football_matches"} */
+
+
+  create or replace view `dbt-demos-385702`.`soccer_538`.`stg_football_matches`
+  OPTIONS()
+  as 
+
+SELECT * FROM `dbt-demos-385702.538_football.stg_football_matches`;
+
+
+[0m22:53:10.158358 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:f5634d7f-1c50-42be-aea7-fb918611c3f4&page=queryresults
+[0m22:53:10.210176 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_matches (execute): 22:53:08.176704 => 22:53:10.210176
+[0m22:53:10.210176 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4c2b058-6d67-4688-abe4-bddeaace9fdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CC574410>]}
+[0m22:53:10.214710 [info ] [Thread-1 (]: 1 of 3 OK created sql view model soccer_538.stg_football_matches ............... [[32mCREATE VIEW (0 processed)[0m in 2.07s]
+[0m22:53:10.214710 [debug] [Thread-1 (]: Finished running node model.soccer_538.stg_football_matches
+[0m22:53:10.214710 [debug] [Thread-1 (]: Began running node model.soccer_538.stg_football_rankings
+[0m22:53:10.220415 [info ] [Thread-1 (]: 2 of 3 START sql table model soccer_538.stg_football_rankings .................. [RUN]
+[0m22:53:10.222937 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.soccer_538.stg_football_matches, now model.soccer_538.stg_football_rankings)
+[0m22:53:10.222937 [debug] [Thread-1 (]: Began compiling node model.soccer_538.stg_football_rankings
+[0m22:53:10.222937 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.stg_football_rankings"
+[0m22:53:10.240814 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_rankings (compile): 22:53:10.222937 => 22:53:10.240814
+[0m22:53:10.240814 [debug] [Thread-1 (]: Began executing node model.soccer_538.stg_football_rankings
+[0m22:53:10.271804 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:53:11.532483 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.stg_football_rankings"
+[0m22:53:11.553134 [debug] [Thread-1 (]: On model.soccer_538.stg_football_rankings: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.stg_football_rankings"} */
+
+  
+    
+
+    create or replace table `dbt-demos-385702`.`soccer_538`.`stg_football_rankings`
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT * FROM `dbt-demos-385702.538_football.stg_football_rankings`
+    );
+  
+[0m22:53:15.182891 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:f4e91be9-e75f-4ae7-bfc2-5d03a7dfd101&page=queryresults
+[0m22:53:15.182891 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_rankings (execute): 22:53:10.246342 => 22:53:15.182891
+[0m22:53:15.182891 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4c2b058-6d67-4688-abe4-bddeaace9fdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CC577BD0>]}
+[0m22:53:15.194323 [info ] [Thread-1 (]: 2 of 3 OK created sql table model soccer_538.stg_football_rankings ............. [[32mCREATE TABLE (640.0 rows, 47.9 KiB processed)[0m in 4.96s]
+[0m22:53:15.194323 [debug] [Thread-1 (]: Finished running node model.soccer_538.stg_football_rankings
+[0m22:53:15.197838 [debug] [Thread-1 (]: Began running node model.soccer_538.mart_football_information
+[0m22:53:15.201170 [info ] [Thread-1 (]: 3 of 3 START sql table model soccer_538.mart_football_information .............. [RUN]
+[0m22:53:15.203383 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.soccer_538.stg_football_rankings, now model.soccer_538.mart_football_information)
+[0m22:53:15.203383 [debug] [Thread-1 (]: Began compiling node model.soccer_538.mart_football_information
+[0m22:53:15.203383 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.mart_football_information"
+[0m22:53:15.224909 [debug] [Thread-1 (]: Timing info for model.soccer_538.mart_football_information (compile): 22:53:15.203383 => 22:53:15.224909
+[0m22:53:15.224909 [debug] [Thread-1 (]: Began executing node model.soccer_538.mart_football_information
+[0m22:53:15.234162 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:53:16.619308 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.mart_football_information"
+[0m22:53:16.633366 [debug] [Thread-1 (]: On model.soccer_538.mart_football_information: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.mart_football_information"} */
+
+  
+    
+
+    create or replace table `dbt-demos-385702`.`soccer_538`.`mart_football_information`
+    
+    
+
+    OPTIONS()
+    as (
+      with
+  qryMatches as (
+    SELECT * FROM `dbt-demos-385702`.`soccer_538`.`stg_football_matches` where league = 'Barclays Premier League'
+    ),
+  qryRankings as (
+    SELECT * FROM `dbt-demos-385702`.`soccer_538`.`stg_football_rankings` where league = 'Barclays Premier League'
+  ),
+
+  qryFinal as (
+    select
+      qryMatches.season,
+      qryMatches.date,
+      qryMatches.league,
+      qryMatches.team1,
+      qryMatches.team2,
+      team_one.rank as team1_rank,
+      team_two.rank as team2_rank
+    from
+      qryMatches join
+      qryRankings as team_one on
+        (qryMatches.team1 = team_one.name) join
+      qryRankings as team_two on
+        (qryMatches.team2 = team_two.name)
+  )
+
+select * from qryFinal
+    );
+  
+[0m22:53:20.403523 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:3534ca1c-1ab5-4ef7-8b8f-14647713036f&page=queryresults
+[0m22:53:20.413725 [debug] [Thread-1 (]: Timing info for model.soccer_538.mart_football_information (execute): 22:53:15.224909 => 22:53:20.411630
+[0m22:53:20.413725 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4c2b058-6d67-4688-abe4-bddeaace9fdf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CB08F150>]}
+[0m22:53:20.413725 [info ] [Thread-1 (]: 3 of 3 OK created sql table model soccer_538.mart_football_information ......... [[32mCREATE TABLE (380.0 rows, 786.5 KiB processed)[0m in 5.21s]
+[0m22:53:20.419757 [debug] [Thread-1 (]: Finished running node model.soccer_538.mart_football_information
+[0m22:53:20.423887 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:53:20.423887 [debug] [MainThread]: Connection 'list_dbt-demos-385702' was properly closed.
+[0m22:53:20.427906 [debug] [MainThread]: Connection 'list_dbt-demos-385702_soccer_538' was properly closed.
+[0m22:53:20.427906 [debug] [MainThread]: Connection 'model.soccer_538.mart_football_information' was properly closed.
+[0m22:53:20.427906 [info ] [MainThread]: 
+[0m22:53:20.427906 [info ] [MainThread]: Finished running 1 view model, 2 table models in 0 hours 0 minutes and 14.35 seconds (14.35s).
+[0m22:53:20.435217 [debug] [MainThread]: Command end result
+[0m22:53:20.517199 [info ] [MainThread]: 
+[0m22:53:20.525055 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:53:20.527799 [info ] [MainThread]: 
+[0m22:53:20.528570 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m22:53:20.528570 [debug] [MainThread]: Command `dbt run` succeeded at 22:53:20.528570 after 17.96 seconds
+[0m22:53:20.533229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214CA2CD750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214C3F4F090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214C3F4FC50>]}
+[0m22:53:20.533229 [debug] [MainThread]: Flushing usage events
+[0m22:54:46.978629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD59A2690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD5B3D690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD5BDE190>]}
+
+
+============================== 22:54:46.988662 | 8ae535d6-5d5d-43d8-b2f2-94c9ff66c075 ==============================
+[0m22:54:46.988662 [info ] [MainThread]: Running with dbt=1.5.0
+[0m22:54:46.988662 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point', 'log_path': 'C:\\dbt_Projects\\dbt_demo\\Repo\\dbt-guide-starting-point\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m22:54:47.988487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8ae535d6-5d5d-43d8-b2f2-94c9ff66c075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD6A8A890>]}
+[0m22:54:48.018582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8ae535d6-5d5d-43d8-b2f2-94c9ff66c075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD6D3EFD0>]}
+[0m22:54:48.057403 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m22:54:48.076589 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m22:54:48.080310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '8ae535d6-5d5d-43d8-b2f2-94c9ff66c075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD6ABD610>]}
+[0m22:54:50.220481 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Marts\mart_football_information.sql
+[0m22:54:50.261349 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Staging\stg_football_matches.sql
+[0m22:54:50.271542 [debug] [MainThread]: 1699: static parser successfully parsed 538_football\Staging\stg_football_rankings.sql
+[0m22:54:50.416065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8ae535d6-5d5d-43d8-b2f2-94c9ff66c075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD6D300D0>]}
+[0m22:54:50.487691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8ae535d6-5d5d-43d8-b2f2-94c9ff66c075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD7EE3810>]}
+[0m22:54:50.494732 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 353 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m22:54:50.497750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8ae535d6-5d5d-43d8-b2f2-94c9ff66c075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD632A590>]}
+[0m22:54:50.497750 [info ] [MainThread]: 
+[0m22:54:50.503982 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m22:54:50.508422 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-demos-385702'
+[0m22:54:50.510439 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:54:51.639410 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dbt-demos-385702_soccer_538'
+[0m22:54:51.649523 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:54:52.668355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8ae535d6-5d5d-43d8-b2f2-94c9ff66c075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD5BDCD90>]}
+[0m22:54:52.673485 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:54:52.673485 [info ] [MainThread]: 
+[0m22:54:52.683919 [debug] [Thread-1 (]: Began running node model.soccer_538.stg_football_matches
+[0m22:54:52.694100 [info ] [Thread-1 (]: 1 of 3 START sql view model soccer_538.stg_football_matches .................... [RUN]
+[0m22:54:52.694100 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.soccer_538.stg_football_matches'
+[0m22:54:52.694100 [debug] [Thread-1 (]: Began compiling node model.soccer_538.stg_football_matches
+[0m22:54:52.704149 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.stg_football_matches"
+[0m22:54:52.716030 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_matches (compile): 22:54:52.699632 => 22:54:52.716030
+[0m22:54:52.716030 [debug] [Thread-1 (]: Began executing node model.soccer_538.stg_football_matches
+[0m22:54:52.796567 [debug] [Thread-1 (]: Writing runtime sql for node "model.soccer_538.stg_football_matches"
+[0m22:54:52.817145 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:54:52.825658 [debug] [Thread-1 (]: On model.soccer_538.stg_football_matches: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "soccer_538", "target_name": "dev", "node_id": "model.soccer_538.stg_football_matches"} */
+
+
+  create or replace view `dbt-demos-385702`.`soccer_538`.`stg_football_matches`
+  OPTIONS()
+  as 
+
+SELECT * FROM `dbt-demos-385702.538_football.stg_football_matches`;
+
+
+[0m22:54:54.819022 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-demos-385702&j=bq:US:b5a18f88-2447-463d-b512-485848d401fb&page=queryresults
+[0m22:54:54.862718 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_matches (execute): 22:54:52.716030 => 22:54:54.862718
+[0m22:54:54.862718 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8ae535d6-5d5d-43d8-b2f2-94c9ff66c075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD7DECA10>]}
+[0m22:54:54.870750 [info ] [Thread-1 (]: 1 of 3 OK created sql view model soccer_538.stg_football_matches ............... [[32mCREATE VIEW (0 processed)[0m in 2.17s]
+[0m22:54:54.870750 [debug] [Thread-1 (]: Finished running node model.soccer_538.stg_football_matches
+[0m22:54:54.870750 [debug] [Thread-1 (]: Began running node model.soccer_538.stg_football_rankings
+[0m22:54:54.875814 [info ] [Thread-1 (]: 2 of 3 START sql view model soccer_538.stg_football_rankings ................... [RUN]
+[0m22:54:54.875814 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.soccer_538.stg_football_matches, now model.soccer_538.stg_football_rankings)
+[0m22:54:54.881118 [debug] [Thread-1 (]: Began compiling node model.soccer_538.stg_football_rankings
+[0m22:54:54.881118 [debug] [Thread-1 (]: Writing injected SQL for node "model.soccer_538.stg_football_rankings"
+[0m22:54:54.901912 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_rankings (compile): 22:54:54.881118 => 22:54:54.901912
+[0m22:54:54.901912 [debug] [Thread-1 (]: Began executing node model.soccer_538.stg_football_rankings
+[0m22:54:54.922759 [debug] [Thread-1 (]: Timing info for model.soccer_538.stg_football_rankings (execute): 22:54:54.901912 => 22:54:54.922759
+[0m22:54:54.943159 [debug] [Thread-1 (]: Compilation Error in model stg_football_rankings (models\538_football\Staging\stg_football_rankings.sql)
+  Trying to create view `dbt-demos-385702`.`soccer_538`.`stg_football_rankings`, but it currently exists as a table. Either drop `dbt-demos-385702`.`soccer_538`.`stg_football_rankings` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+  > called by macro handle_existing_table (macros\materializations\models\view\helpers.sql)
+  > called by macro create_or_replace_view (macros\materializations\models\view\create_or_replace_view.sql)
+  > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+  > called by model stg_football_rankings (models\538_football\Staging\stg_football_rankings.sql)
+[0m22:54:54.943159 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8ae535d6-5d5d-43d8-b2f2-94c9ff66c075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD7F08790>]}
+[0m22:54:54.943159 [error] [Thread-1 (]: 2 of 3 ERROR creating sql view model soccer_538.stg_football_rankings .......... [[31mERROR[0m in 0.07s]
+[0m22:54:54.954349 [debug] [Thread-1 (]: Finished running node model.soccer_538.stg_football_rankings
+[0m22:54:54.954349 [debug] [Thread-1 (]: Began running node model.soccer_538.mart_football_information
+[0m22:54:54.954349 [info ] [Thread-1 (]: 3 of 3 SKIP relation soccer_538.mart_football_information ...................... [[33mSKIP[0m]
+[0m22:54:54.954349 [debug] [Thread-1 (]: Finished running node model.soccer_538.mart_football_information
+[0m22:54:54.963525 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:54:54.963525 [debug] [MainThread]: Connection 'list_dbt-demos-385702' was properly closed.
+[0m22:54:54.963525 [debug] [MainThread]: Connection 'list_dbt-demos-385702_soccer_538' was properly closed.
+[0m22:54:54.963525 [debug] [MainThread]: Connection 'model.soccer_538.stg_football_rankings' was properly closed.
+[0m22:54:54.963525 [info ] [MainThread]: 
+[0m22:54:54.970049 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 4.46 seconds (4.46s).
+[0m22:54:54.974142 [debug] [MainThread]: Command end result
+[0m22:54:55.033304 [info ] [MainThread]: 
+[0m22:54:55.036524 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m22:54:55.036524 [info ] [MainThread]: 
+[0m22:54:55.036524 [error] [MainThread]: [33mCompilation Error in model stg_football_rankings (models\538_football\Staging\stg_football_rankings.sql)[0m
+[0m22:54:55.036524 [error] [MainThread]:   Trying to create view `dbt-demos-385702`.`soccer_538`.`stg_football_rankings`, but it currently exists as a table. Either drop `dbt-demos-385702`.`soccer_538`.`stg_football_rankings` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+[0m22:54:55.036524 [error] [MainThread]:   
+[0m22:54:55.036524 [error] [MainThread]:   > in macro bigquery__handle_existing_table (macros\materializations\view.sql)
+[0m22:54:55.046606 [error] [MainThread]:   > called by macro handle_existing_table (macros\materializations\models\view\helpers.sql)
+[0m22:54:55.049117 [error] [MainThread]:   > called by macro create_or_replace_view (macros\materializations\models\view\create_or_replace_view.sql)
+[0m22:54:55.050311 [error] [MainThread]:   > called by macro materialization_view_bigquery (macros\materializations\view.sql)
+[0m22:54:55.050311 [error] [MainThread]:   > called by model stg_football_rankings (models\538_football\Staging\stg_football_rankings.sql)
+[0m22:54:55.057081 [info ] [MainThread]: 
+[0m22:54:55.057081 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=1 TOTAL=3
+[0m22:54:55.057081 [debug] [MainThread]: Command `dbt run` failed at 22:54:55.057081 after 8.19 seconds
+[0m22:54:55.057081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD5C91410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD56E7E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CD632A250>]}
+[0m22:54:55.065110 [debug] [MainThread]: Flushing usage events
